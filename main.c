@@ -5,14 +5,11 @@
 
 int main(void) {
 	char c;
-	int i;
 	
-	printf("input a number : ");
+	printf("enter a character : ");
 	scanf("%c", &c);
 	
-	i = c - '0'; //아스키코드를 숫자로 변환하기 위해 -'0' 
-	printf("The input number ASCII is %i\n", c);  
-	printf("The input number is %i\n", i);
+	printf("The next character of %c (%d) is a %c (%d)", c, c, c+1, c+1);  
 	
 	return 0;
 }
